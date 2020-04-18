@@ -12,7 +12,7 @@ class Uri
         $this->uri = $_SERVER['REQUEST_URI'];
     }
 
-    public function emptUri(){
+    public function emptyUri(){
         return ($this->uri == '/') ? true : false;
     }
 

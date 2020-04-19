@@ -1,7 +1,8 @@
 <?php
 use App\Classes\Template;
-$template = new Template();
+use App\Classes\Parameters;
 
+$template = new Template();
 $twig = $template->init();
 
 /*
@@ -21,4 +22,8 @@ $method = $callMethod->method($controler);
 /*
  * Chamando controller através da classe controller e da classe method
  */
-$controler->$method();
+
+$parameters = new Parameters();
+$parameter = $parameters->getParameterMethod($controler, $method);
+
+$controler->$method($parameter);

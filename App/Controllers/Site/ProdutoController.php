@@ -3,9 +3,16 @@
 namespace App\Controllers\Site;
 
 
-class ProdutoController
+use App\Controllers\BaseController;
+
+class ProdutoController extends BaseController
 {
 
-    public function index(){}
-    public function calca(){}
+    public function index($parameters){
+        dump($parameters[1]);
+    }
+
+    public function calca($parameters){
+        dump($parameters[1]);
+    }
 }

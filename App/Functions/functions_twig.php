@@ -1,7 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: telmo
- * Date: 17/04/20
- * Time: 18:52
- */
+
+$site_url  = new \Twig_SimpleFunction('site_url', function (){
+    return 'http://'.$_SERVER['SERVER_NAME'].':8888';
+});

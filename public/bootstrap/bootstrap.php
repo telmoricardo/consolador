@@ -5,6 +5,10 @@ use App\Classes\Parameters;
 $template = new Template();
 $twig = $template->init();
 
+$twig->addFunction($site_url);
+
+
+
 /*
  * chamando o controller digitado na url
  */

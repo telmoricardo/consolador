@@ -10,8 +10,8 @@ class HomeController extends BaseController
     public function index(){
 
         $dados = [
-            'titulo' => 'Centro Espiríta Consolador',
-            'nome' => 'Telmo Ricardo'
+            'titulo' => 'O Consolador | Obras Sociais | oconsolador.org.br'
+
         ];
 
         $template = $this->twig->loadTemplate('site_home.html');
